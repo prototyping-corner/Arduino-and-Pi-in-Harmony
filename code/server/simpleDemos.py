@@ -34,7 +34,7 @@ class SimpleDisplayCore():
 class JSONDemoCore():
     def get(self):
         # Change this if using hardware serial
-        port = PortUtils('/dev/ttyAMC0', 9600)
+        port = PortUtils('/dev/ttyACM0', 9600)
         data = port.read()
 
         # Split the data and extract what I want
@@ -46,7 +46,7 @@ class JSONDemoCore():
         # Return our JSON
         # Is there a library to do this - yes
         # Is it necessary for this demo - no
-        json = "{\"irtemp\":" + irtemp + ",\"ambtemp\": " + ambtemp + ""}"
+        json = "{\"irtemp\":" + irtemp + ",\"ambtemp\": " + ambtemp + "\"}"
         return json
 
 if __name__ == "__main__":
