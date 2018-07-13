@@ -21,7 +21,7 @@ class SimpleDisplayCore():
         split = data.split(":")
         irtemp = split[0]
         ambtemp = split[1]
-
+        
         # Read the template file and replace some values
 	    html = ''
 	    with open(CURRENTDIR + '/output_template.html') as template:
@@ -46,7 +46,7 @@ class JSONDemoCore():
         # Return our JSON
         # Is there a library to do this - yes
         # Is it necessary for this demo - no
-        json = "{\"irtemp\":" + irtemp + ",\"ambtemp\": " + ambtemp + "\"}"
+        json = "{\"irtemp\":\"" + irtemp + "\",\"ambtemp\": \"" + ambtemp + "\"}"
         return json
 
 if __name__ == "__main__":
