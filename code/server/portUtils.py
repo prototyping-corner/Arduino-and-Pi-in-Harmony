@@ -1,3 +1,11 @@
+# PortUtils
+# A simple helper class to get the data from serial port until a CR LF
+#
+# MIT License
+# Copyright (c) 2018 Prototyping Corner
+# prototypingcorner.io
+
+
 import os
 import serial
 

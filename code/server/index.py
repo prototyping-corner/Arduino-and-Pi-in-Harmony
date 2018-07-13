@@ -1,3 +1,13 @@
+# Main application for python web server
+# Has two demo features for showing data formats for data collected from
+# arduino
+#
+# Project details at
+# prototypingcorner.io/projects/arduino-and-pi-in-harmony
+#
+# MIT License
+# Copyright (c) 2018 Prototyping Corner
+
 from flask import Flask, request, make_response
 application = Flask(__name__)
 

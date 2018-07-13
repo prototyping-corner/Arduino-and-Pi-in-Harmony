@@ -1,5 +1,9 @@
 # SimpleDemos.py
 # A few classes to demo this project
+#
+# MIT License
+# Copyright (c) 2018 Prototyping Corner
+
 import os
 import serial
 from portUtils import PortUtils;
@@ -21,7 +25,7 @@ class SimpleDisplayCore():
         split = data.split(":")
         irtemp = split[0]
         ambtemp = split[1]
-        
+
         # Read the template file and replace some values
 	    html = ''
 	    with open(CURRENTDIR + '/output_template.html') as template:
