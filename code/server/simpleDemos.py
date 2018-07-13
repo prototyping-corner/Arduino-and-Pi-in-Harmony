@@ -39,7 +39,7 @@ class JSONDemoCore():
 
         # Split the data and extract what I want
         # In this example
-        splitData = data.split(":")
+        split = data.split(":")
         irtemp = split[0]
         ambtemp = split[1]
 
